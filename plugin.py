@@ -112,9 +112,9 @@ class BasePlugin:
         # if 20 not in Devices: 
         #     Domoticz.Device(Name="Average line current", Unit=20,Type=0xF3,Subtype=0x17,Used=0).Create()
         # Options = { "Custom" : "1;A"} 
-        if 21 not in Devices:
-            Domoticz.Device(Name="Sum of line currents", Unit=21,Type=0xF3,Subtype=0x17,Used=0).Create()
-        Options = { "Custom" : "1;A"}
+        # if 21 not in Devices:
+        #     Domoticz.Device(Name="Sum of line currents", Unit=21,Type=0xF3,Subtype=0x17,Used=0).Create()
+        # Options = { "Custom" : "1;A"}
         if 22 not in Devices:
             Domoticz.Device(Name="Total System Power", Unit=22,TypeName="Usage",Used=0).Create()
         Options = { "Custom" : "1;W"} 
@@ -203,7 +203,7 @@ class BasePlugin:
             L3_Power_Factor = self.rs485.read_float(34, functioncode=4, numberOfRegisters=2)
             # Average_line_to_neutral_volts = self.rs485.read_float(42, functioncode=4, numberOfRegisters=2)
             # Average_line_current = self.rs485.read_float(46, functioncode=4, numberOfRegisters=2)
-            Sum_of_line_currents = self.rs485.read_float(48, functioncode=4, numberOfRegisters=2)
+            # Sum_of_line_currents = self.rs485.read_float(48, functioncode=4, numberOfRegisters=2)
             Total_System_Power = self.rs485.read_float(52, functioncode=4, numberOfRegisters=2)
             # Total_System_Volt_amps = self.rs485.read_float(56, functioncode=4, numberOfRegisters=2)
             # Total_System_VAr = self.rs485.read_float(60, functioncode=4, numberOfRegisters=2)
@@ -246,7 +246,7 @@ class BasePlugin:
             Devices[18].Update(0,str(L3_Power_Factor))
             # Devices[19].Update(0,str(Average_line_to_neutral_volts))
             # Devices[20].Update(0,str(Average_line_current))
-            Devices[21].Update(0,str(Sum_of_line_currents))
+            # Devices[21].Update(0,str(Sum_of_line_currents))
             Devices[22].Update(0,str(Total_System_Power))
             # Devices[23].Update(0,str(Total_System_Volt_amps))
             # Devices[24].Update(0,str(Total_System_VAr))
