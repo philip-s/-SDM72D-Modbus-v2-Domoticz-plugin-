@@ -36,13 +36,12 @@ git clone https://github.com/philip-s/SDM72D-Modbus-v2-Domoticz-plugin.git
 systemctl restart domoticz.service 
 ```
 ## Configuration
-Refresh Domoticz website (F5)
-Select "Eastron SDM72-D-Modbus v2" in Hardware configuration screen.<br>
+3. Refresh Domoticz website (F5).<br>
+4. Select "Eastron SDM72-D-Modbus v2" in Hardware configuration screen.<br>
 If needed modify some parameters (defaults will do) and click add.<br>
 Hint: Set reading interval to 0 if you want updates per "heartbeat" of the system (aprox 10s in my case).<br>
 <br>
-Many new devices will be automatically added. 
-Go to devices tab, there you will find all ofthem and add the one you need to your system (usually not all of them are necessary).<br>
+5. Go to devices tab, there you will find all of them and add the one you need to your system (usually not all of them are necessary).<br>
 <br>
 Tested on domoticz v2020.2 (v1) and 2021.1 (v2)
 <br><br><br>
