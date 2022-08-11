@@ -16,6 +16,7 @@ Used python modules: <br>
 pyserial -> https://pythonhosted.org/pyserial/ <br>
 minimalmodbus -> http://minimalmodbus.readthedocs.io<br>
 If python plugin service is not working try :
+```
 sudo apt-get update
 sudo apt-get install python3.7 libpython3.7 python3.7-dev -y"<br>
 sudo apt-get install python-pip python3-pip -y
@@ -23,6 +24,7 @@ pip install pyserial
 pip install minimalmodbus
 sudo pip3 install -U pymodbus
 sudo reboot
+```
 <br>
 Installation: <br>
 cd ~/domoticz/plugins<br>
