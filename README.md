@@ -10,7 +10,7 @@ Further edited by bbossink to work with SDM72 v1 and by philips to work with SDM
 This version is addapted to SDM72d-m v2 which, comparing to v1, report separetly power on L1, L2 and L3, reactive power and many other grid parameters.
 More info can be found in the modbus manual of this energy meter: https://stromzähler.eu/media/pdf/93/17/d7/SDM72DM-V2.pdf
 
-Requirements: <br>
+## Prerequisites
 You need a orking Domoticz instance with working python plugin service (see logs in domoticz)<br>
 This plugin requires python modules: <br>
 pyserial -> https://pythonhosted.org/pyserial/ <br>
@@ -18,7 +18,7 @@ minimalmodbus -> http://minimalmodbus.readthedocs.io<br>
 To install them :
 ```
 sudo apt-get update
-sudo apt-get install python3.7 libpython3.7 python3.7-dev -y"<br>
+sudo apt-get install python3.7 libpython3.7 python3.7-dev -y
 sudo apt-get install python-pip python3-pip -y
 pip install pyserial
 pip install minimalmodbus
@@ -26,15 +26,18 @@ sudo pip3 install -U pymodbus
 sudo reboot
 ```
 <br>
-Installation: <br>
+<br>
+## Installation of the plugin <br>
+1. Clone repository into your domoticz plugins folder
 ```
 cd ~/domoticz/plugins<br>
 git clone https://github.com/philip-s/SDM72D-Modbus-v2-Domoticz-plugin.git
 ```
-After installation restart domoticz: 
+2. Restart domoticz:
 ```
 systemctl restart domoticz.service 
 ```
+4. Refresh Domoticz website (F5)
 <br>
 <br>
 Configuration: <br>
