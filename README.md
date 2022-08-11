@@ -11,11 +11,11 @@ This version is addapted to SDM72d-m v2 which, comparing to v1, report separetly
 More info can be found in the modbus manual of this energy meter: https://stromzähler.eu/media/pdf/93/17/d7/SDM72DM-V2.pdf
 
 Requirements: <br>
-Working Domoticz instance with working python plugin service (see logs in domoticz)<br>
-Used python modules: <br>
+You need a orking Domoticz instance with working python plugin service (see logs in domoticz)<br>
+This plugin requires python modules: <br>
 pyserial -> https://pythonhosted.org/pyserial/ <br>
 minimalmodbus -> http://minimalmodbus.readthedocs.io<br>
-If python plugin service is not working try :
+To install them :
 ```
 sudo apt-get update
 sudo apt-get install python3.7 libpython3.7 python3.7-dev -y"<br>
@@ -29,8 +29,10 @@ sudo reboot
 Installation: <br>
 ```
 cd ~/domoticz/plugins<br>
-git clone https://github.com/philip-s/SDM72D-Modbus-v2-Domoticz-plugin.git <br>
+git clone https://github.com/philip-s/SDM72D-Modbus-v2-Domoticz-plugin.git
+```
 After installation restart domoticz: 
+```
 systemctl restart domoticz.service 
 ```
 <br>
