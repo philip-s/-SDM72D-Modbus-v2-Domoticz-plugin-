@@ -13,9 +13,9 @@ More info can be found in the modbus manual of this energy meter: https://stromz
 ## Prerequisites
 You need a orking Domoticz instance with working python plugin service (see logs in domoticz)<br>
 This plugin requires python modules: <br>
-pyserial -> https://pythonhosted.org/pyserial/ <br>
-minimalmodbus -> http://minimalmodbus.readthedocs.io<br>
-To install them :
+- pyserial -> https://pythonhosted.org/pyserial/ <br>
+- minimalmodbus -> http://minimalmodbus.readthedocs.io<br>
+To install those above :
 ```
 sudo apt-get update
 sudo apt-get install python3.7 libpython3.7 python3.7-dev -y
@@ -27,20 +27,20 @@ sudo reboot
 ```
 <br>
 <br>
-## Installation of the plugin <br>
+## Installation of the plugin
 1. Clone repository into your domoticz plugins folder
 ```
-cd ~/domoticz/plugins<br>
+cd ~/domoticz/plugins
 git clone https://github.com/philip-s/SDM72D-Modbus-v2-Domoticz-plugin.git
 ```
 2. Restart domoticz:
 ```
 systemctl restart domoticz.service 
 ```
-4. Refresh Domoticz website (F5)
 <br>
 <br>
-Configuration: <br>
+## Configuration:
+Refresh Domoticz website (F5)
 Select "Eastron SDM72-D-Modbus v2" in Hardware configuration screen.<br>
 If needed modify some parameters (defaults will do) and click add.<br>
 Hint: Set reading interval to 0 if you want updates per "heartbeat" of the system (aprox 10s in my case).<br>
