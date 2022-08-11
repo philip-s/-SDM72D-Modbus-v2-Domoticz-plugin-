@@ -33,7 +33,7 @@ git clone https://github.com/philip-s/SDM72D-Modbus-v2-Domoticz-plugin.git
 ```
 2. Restart domoticz:
 ```
-systemctl restart domoticz.service 
+sudo systemctl restart domoticz.service 
 ```
 ## Configuration
 3. Refresh Domoticz website (F5).<br>
