@@ -97,15 +97,15 @@ class BasePlugin:
         # if 15 not in Devices:
         #     Domoticz.Device(Name="L3 Reactive Power", Unit=15,TypeName="Custom",Used=0).Create()
         # Options = { "Custom" : "1;Var"}
-        # if 16 not in Devices:
-        #     Domoticz.Device(Name="L1 Power Factor", Unit=16,TypeName="Custom",Used=0).Create()
-        # Options = { "Custom" : "1;"} 
-        # if 17 not in Devices:
-        #     Domoticz.Device(Name="L2 Power Factor", Unit=17,TypeName="Custom",Used=0).Create()
-        # Options = { "Custom" : "1;"} 
-        # if 18 not in Devices:
-        #     Domoticz.Device(Name="L3 Power Factor", Unit=18,TypeName="Custom",Used=0).Create()
-        # Options = { "Custom" : "1;"}
+        if 16 not in Devices:
+            Domoticz.Device(Name="L1 Power Factor", Unit=16,TypeName="Custom",Used=0).Create()
+        Options = { "Custom" : "1;"} 
+        if 17 not in Devices:
+            Domoticz.Device(Name="L2 Power Factor", Unit=17,TypeName="Custom",Used=0).Create()
+        Options = { "Custom" : "1;"} 
+        if 18 not in Devices:
+            Domoticz.Device(Name="L3 Power Factor", Unit=18,TypeName="Custom",Used=0).Create()
+        Options = { "Custom" : "1;"}
         # if 19 not in Devices:
         #     Domoticz.Device(Name="Average_line_to_neutral_volts", Unit=19,Type=0xF3,Subtype=0x8,Used=0).Create()
         # Options = { "Custom" : "1;V"} 
@@ -198,9 +198,9 @@ class BasePlugin:
             # L1_Reactive_Power = self.rs485.read_float(24, functioncode=4, numberOfRegisters=2)
             # L2_Reactive_Power = self.rs485.read_float(26, functioncode=4, numberOfRegisters=2)
             # L3_Reactive_Power = self.rs485.read_float(28, functioncode=4, numberOfRegisters=2)
-            # L1_Power_Factor = self.rs485.read_float(30, functioncode=4, numberOfRegisters=2)
-            # L2_Power_Factor = self.rs485.read_float(32, functioncode=4, numberOfRegisters=2)
-            # L3_Power_Factor = self.rs485.read_float(34, functioncode=4, numberOfRegisters=2)
+            L1_Power_Factor = self.rs485.read_float(30, functioncode=4, numberOfRegisters=2)
+            L2_Power_Factor = self.rs485.read_float(32, functioncode=4, numberOfRegisters=2)
+            L3_Power_Factor = self.rs485.read_float(34, functioncode=4, numberOfRegisters=2)
             # Average_line_to_neutral_volts = self.rs485.read_float(42, functioncode=4, numberOfRegisters=2)
             # Average_line_current = self.rs485.read_float(46, functioncode=4, numberOfRegisters=2)
             # Sum_of_line_currents = self.rs485.read_float(48, functioncode=4, numberOfRegisters=2)
@@ -241,9 +241,9 @@ class BasePlugin:
             # Devices[13].Update(0,str(L1_Reactive_Power))
             # Devices[14].Update(0,str(L2_Reactive_Power))
             # Devices[15].Update(0,str(L3_Reactive_Power))
-            # Devices[16].Update(0,str(L1_Power_Factor))
-            # Devices[17].Update(0,str(L2_Power_Factor))
-            # Devices[18].Update(0,str(L3_Power_Factor))
+            Devices[16].Update(0,str(L1_Power_Factor))
+            Devices[17].Update(0,str(L2_Power_Factor))
+            Devices[18].Update(0,str(L3_Power_Factor))
             # Devices[19].Update(0,str(Average_line_to_neutral_volts))
             # Devices[20].Update(0,str(Average_line_current))
             # Devices[21].Update(0,str(Sum_of_line_currents))
