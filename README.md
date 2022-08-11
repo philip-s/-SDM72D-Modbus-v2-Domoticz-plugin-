@@ -27,10 +27,13 @@ sudo reboot
 ```
 <br>
 Installation: <br>
+```
 cd ~/domoticz/plugins<br>
 git clone https://github.com/philip-s/SDM72D-Modbus-v2-Domoticz-plugin.git <br>
 After installation restart domoticz: 
-systemctl restart domoticz.service <br>
+systemctl restart domoticz.service 
+```
+<br>
 <br>
 Configuration: <br>
 Select "Eastron SDM72-D-Modbus v2" in Hardware configuration screen.<br>
