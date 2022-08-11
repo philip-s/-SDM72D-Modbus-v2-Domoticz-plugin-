@@ -4,8 +4,9 @@ This is a plugin for domoticz to get all the data from the meter directly into D
 To make it work usually you need a USB-Modbus dongle plugged into raspberry and cables connected to A and B in the meter. 
 This is a Modbus RTU communication, does not work with TCP-IP Modbus.
 
-Original code by MFxMF for the SDM630-M power meter https://github.com/MFxMF/SDM630-Modbus
-Further edited by bbossink to work with SDM72 v1 and by philips to work with SDM72d-m v2.
+Original code by MFxMF for the SDM630-M power meter https://github.com/MFxMF/SDM630-Modbus.
+Further edited by bbossink to work with SDM72D-M v1: https://github.com/bbossink/SDM72D-Modbus-Domoticz-plugin,
+and by philips to work with SDM72D-M v2.
 
 This version is addapted to SDM72d-m v2 which, comparing to v1, report separetly power on L1, L2 and L3, reactive power and many other grid parameters.
 More info can be found in the modbus manual of this energy meter: https://stromzähler.eu/media/pdf/93/17/d7/SDM72DM-V2.pdf
