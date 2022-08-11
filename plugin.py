@@ -107,17 +107,17 @@ class BasePlugin:
             Domoticz.Device(Name="L3 Power Factor", Unit=18,TypeName="Custom",Used=0).Create()
         Options = { "Custom" : "1;"}
         if 19 not in Devices:
-            Domoticz.Device(Name="Average_line_to_neutral_volts", Unit=19,Type=0xF3,Subtype=0x8,Used=0).Create()
+            Domoticz.Device(Name="Average line to neutral volts", Unit=19,Type=0xF3,Subtype=0x8,Used=1).Create()
         Options = { "Custom" : "1;V"} 
-        if 20 not in Devices:
-            Domoticz.Device(Name="Average_line_current", Unit=20,Type=0xF3,Subtype=0x17,Used=0).Create()
+        if 20 not in Devices: 
+            Domoticz.Device(Name="Average line current", Unit=20,Type=0xF3,Subtype=0x17,Used=0).Create()
         Options = { "Custom" : "1;A"} 
         if 21 not in Devices:
             Domoticz.Device(Name="Sum of line currents", Unit=21,Type=0xF3,Subtype=0x17,Used=0).Create()
         Options = { "Custom" : "1;A"}
         if 22 not in Devices:
-            Domoticz.Device(Name="Total System Power", Unit=22,TypeName="Usage",Used=1).Create()
-        Options = { "Custom" : "1;Wh"} 
+            Domoticz.Device(Name="Total System Power", Unit=22,TypeName="Usage",Used=0).Create()
+        Options = { "Custom" : "1;W"} 
         # if 23 not in Devices:
         #     Domoticz.Device(Name="Total system volt amps", Unit=23,TypeName="Custom",Used=0).Create()
         # Options = { "Custom" : "1;VA"} 
