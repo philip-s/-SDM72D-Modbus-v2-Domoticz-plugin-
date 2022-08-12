@@ -96,7 +96,7 @@ class BasePlugin:
         # if 15 not in Devices:
         #     Domoticz.Device(Name="L3 Reactive Power", Unit=15,TypeName="Custom",Used=0).Create()
         # Options = { "Custom" : "1;Var"}
-        # if 16 not in Devices:
+        if 16 not in Devices:
             Domoticz.Device(Name="L1 Power Factor", Unit=16,TypeName="Custom",Used=0).Create()
         Options = { "Custom" : "1;"} 
         if 17 not in Devices:
