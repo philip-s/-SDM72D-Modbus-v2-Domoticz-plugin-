@@ -69,9 +69,9 @@ class BasePlugin:
         if 6 not in Devices:
             Domoticz.Device(Name="L3 Current", Unit=6,Type=0xF3,Subtype=0x17,Used=0).Create()
         Options = { "Custom" : "1;A"} 
-        if 7 not in Devices:
-            Domoticz.Device(Name="L1 Active Power", Unit=7,TypeName="Usage",Used=1).Create()
-        Options = { "Custom" : "1;W"} 
+        # if 7 not in Devices:
+        #     Domoticz.Device(Name="L1 Active Power", Unit=7,TypeName="Usage",Used=1).Create()
+        # Options = { "Custom" : "1;W"} 
         # if 8 not in Devices:
         #     Domoticz.Device(Name="L2 Active Power", Unit=8,TypeName="Usage",Used=1).Create()
         # Options = { "Custom" : "1;W"} 
@@ -185,9 +185,9 @@ class BasePlugin:
             L1_Volts = self.rs485.read_float(0, functioncode=4, numberOfRegisters=2)
             L2_Volts = self.rs485.read_float(2, functioncode=4, numberOfRegisters=2)
             L3_Volts = self.rs485.read_float(4, functioncode=4, numberOfRegisters=2)
-            # L1_Current = self.rs485.read_float(6, functioncode=4, numberOfRegisters=2)
-            # L2_Current = self.rs485.read_float(8, functioncode=4, numberOfRegisters=2)
-            # L3_Current = self.rs485.read_float(10, functioncode=4, numberOfRegisters=2)
+            L1_Current = self.rs485.read_float(6, functioncode=4, numberOfRegisters=2)
+            L2_Current = self.rs485.read_float(8, functioncode=4, numberOfRegisters=2)
+            L3_Current = self.rs485.read_float(10, functioncode=4, numberOfRegisters=2)
             #L1_Active_Power = self.rs485.read_float(12, functioncode=4, numberOfRegisters=2)
             #L2_Active_Power = self.rs485.read_float(14, functioncode=4, numberOfRegisters=2)
             #L3_Active_Power = self.rs485.read_float(16, functioncode=4, numberOfRegisters=2)
@@ -228,9 +228,9 @@ class BasePlugin:
             Devices[1].Update(0,str(L1_Volts))
             Devices[2].Update(0,str(L2_Volts))
             Devices[3].Update(0,str(L3_Volts))
-            # Devices[4].Update(0,str(L1_Current))
-            # Devices[5].Update(0,str(L2_Current))
-            # Devices[6].Update(0,str(L3_Current))
+            Devices[4].Update(0,str(L1_Current))
+            Devices[5].Update(0,str(L2_Current))
+            Devices[6].Update(0,str(L3_Current))
             #Devices[7].Update(0,str(L1_Active_Power))
             #Devices[8].Update(0,str(L2_Active_Power))
             #Devices[9].Update(0,str(L3_Active_Power))
