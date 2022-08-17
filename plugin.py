@@ -78,104 +78,104 @@ class BasePlugin:
         if 9 not in Devices:
             Domoticz.Device(Name="L3 Active Power", Unit=9,TypeName="Usage",Used=1).Create()
         Options = { "Custom" : "1;W"}
-        #if 10 not in Devices:
-        #    Domoticz.Device(Name="L1 Apparent Power", Unit=10,TypeName="Usage",Used=0).Create()
-        #Options = { "Custom" : "1;W"} 
-        #if 11 not in Devices:
-        #    Domoticz.Device(Name="L2 Apparent Power", Unit=11,TypeName="Usage",Used=0).Create()
-        #Options = { "Custom" : "1;W"} 
-        #if 12 not in Devices:
-        #    Domoticz.Device(Name="L3 Apparent Power", Unit=12,TypeName="Usage",Used=0).Create()
-        #Options = { "Custom" : "1;W"}
-        # if 13 not in Devices:
-        #     Domoticz.Device(Name="L1 Reactive Power", Unit=13,TypeName="Custom",Used=0).Create()
-        # Options = { "Custom" : "1;Var"} 
-        # if 14 not in Devices:
-        #     Domoticz.Device(Name="L2 Reactive Power", Unit=14,TypeName="Custom",Used=0).Create()
-        # Options = { "Custom" : "1;Var"} 
-        # if 15 not in Devices:
-        #     Domoticz.Device(Name="L3 Reactive Power", Unit=15,TypeName="Custom",Used=0).Create()
-        # Options = { "Custom" : "1;Var"}
-        # if 16 not in Devices:
-        #     Domoticz.Device(Name="L1 Power Factor", Unit=16,TypeName="Custom",Used=0).Create()
-        # Options = { "Custom" : "1;"} 
-        # if 17 not in Devices:
-        #     Domoticz.Device(Name="L2 Power Factor", Unit=17,TypeName="Custom",Used=0).Create()
-        # Options = { "Custom" : "1;"} 
-        # if 18 not in Devices:
-        #     Domoticz.Device(Name="L3 Power Factor", Unit=18,TypeName="Custom",Used=0).Create()
-        # Options = { "Custom" : "1;"}
-        # if 19 not in Devices:
-        #     Domoticz.Device(Name="Average_line_to_neutral_volts", Unit=19,Type=0xF3,Subtype=0x8,Used=0).Create()
-        # Options = { "Custom" : "1;V"} 
-        # if 20 not in Devices:
-        #     Domoticz.Device(Name="Average_line_current", Unit=20,Type=0xF3,Subtype=0x17,Used=0).Create()
-        # Options = { "Custom" : "1;A"} 
-        # if 21 not in Devices:
-        #     Domoticz.Device(Name="Sum of line currents", Unit=21,Type=0xF3,Subtype=0x17,Used=0).Create()
-        # Options = { "Custom" : "1;A"}
-        # if 22 not in Devices:
-        #     Domoticz.Device(Name="Total System Power", Unit=22,TypeName="Usage",Used=1).Create()
-        # Options = { "Custom" : "1;Wh"} 
-        # if 23 not in Devices:
-        #     Domoticz.Device(Name="Total system volt amps", Unit=23,TypeName="Custom",Used=0).Create()
-        # Options = { "Custom" : "1;VA"} 
-        # if 24 not in Devices:
-        #     Domoticz.Device(Name="Total system VAr", Unit=24,TypeName="Custom",Used=0).Create()
-        # Options = { "Custom" : "1;VAr"} 
-        # if 25 not in Devices:
-        #     Domoticz.Device(Name="Total system power factor", Unit=25,TypeName="Custom",Used=0).Create()
-        # Options = { "Custom" : "1;"} 
-        # if 26 not in Devices:
-        #     Domoticz.Device(Name="Frequency", Unit=26,TypeName="Custom",Used=0).Create()
-        # Options = { "Custom" : "1;Hz"} 
-        # if 27 not in Devices:
-        #     Domoticz.Device(Name="Import Active Energy", Unit=27,Type=0x71,Subtype=0x0,Used=1).Create()
-        # Options = { "Custom" : "1;kWh"}
-        # if 28 not in Devices:
-        #     Domoticz.Device(Name="Export Active Energy", Unit=28,Type=0x71,Subtype=0x0,Used=1).Create()
-        # Options = { "Custom" : "1;kWh"} 
-        # if 29 not in Devices:
-        #     Domoticz.Device(Name="Line 1 to Line 2 volts", Unit=29,Type=0xF3,Subtype=0x8,Used=0).Create()
-        # Options = { "Custom" : "1;V"} 
-        # if 30 not in Devices:
-        #     Domoticz.Device(Name="Line 2 to Line 3 volts", Unit=30,Type=0xF3,Subtype=0x8,Used=0).Create()
-        # Options = { "Custom" : "1;V"} 
-        # if 31 not in Devices:
-        #     Domoticz.Device(Name="Line 3 to Line 1 volts", Unit=31,Type=0xF3,Subtype=0x8,Used=0).Create()
-        # Options = { "Custom" : "1;V"} 
-        # if 32 not in Devices:
-        #     Domoticz.Device(Name="Average line to line volts", Unit=32,Type=0xF3,Subtype=0x8,Used=0).Create()
-        # Options = { "Custom" : "1;V"} 
-        # if 33 not in Devices:
-        #     Domoticz.Device(Name="Neutral current", Unit=33,Type=0xF3,Subtype=0x17,Used=0).Create()
-        # Options = { "Custom" : "1;A"}
-        # if 34 not in Devices:
-        #     Domoticz.Device(Name="Total Active Energy", Unit=34,Type=0x71,Subtype=0x0,Used=1).Create()
-        # Options = { "Custom" : "1;kWh"} 
-        # if 35 not in Devices:
-        #     Domoticz.Device(Name="Total Reactive Energy", Unit=35,Type="Custom",Used=0).Create()
-        # Options = { "Custom" : "1;kVArh"} 
-        # if 36 not in Devices:
-        #     Domoticz.Device(Name="Resettable total kWh", Unit=36,Type=0x71,Subtype=0x0,Used=0).Create()
-        # Options = { "Custom" : "1;kWh"}
-        # if 37 not in Devices:
-        #     Domoticz.Device(Name="Resettable import kWh", Unit=37,Type=0x71,Subtype=0x0,Used=0).Create()
-        # Options = { "Custom" : "1;kWh"}
-        # if 38 not in Devices:
-        #     Domoticz.Device(Name="Resettable export kWh", Unit=38,Type=0x71,Subtype=0x0,Used=0).Create()
-        # Options = { "Custom" : "1;kWh"}
-        # if 39 not in Devices:
-        #     Domoticz.Device(Name="Net kWh(Import-Export)", Unit=39,Type=0x71,Subtype=0x0,Used=1).Create()
-        # Options = { "Custom" : "1;kWh"} 
-        # if 40 not in Devices:
-        #     Domoticz.Device(Name="Total Import Active Power", Unit=40,TypeName="Usage",Used=1).Create()
-        # Options = { "Custom" : "1;W"} 
-        # if 41 not in Devices:
-        #     Domoticz.Device(Name="Total Export Active Power", Unit=41,TypeName="Usage",Used=1).Create()
-        # Options = { "Custom" : "1;W"} 
-               
-    def onStop(self):
+        if 10 not in Devices:
+            Domoticz.Device(Name="L1 Apparent Power", Unit=10,TypeName="Usage",Used=0).Create()
+        Options = { "Custom" : "1;W"} 
+        if 11 not in Devices:
+            Domoticz.Device(Name="L2 Apparent Power", Unit=11,TypeName="Usage",Used=0).Create()
+        Options = { "Custom" : "1;W"} 
+        if 12 not in Devices:
+            Domoticz.Device(Name="L3 Apparent Power", Unit=12,TypeName="Usage",Used=0).Create()
+        Options = { "Custom" : "1;W"}
+         if 13 not in Devices:
+             Domoticz.Device(Name="L1 Reactive Power", Unit=13,TypeName="Custom",Used=0).Create()
+         Options = { "Custom" : "1;Var"} 
+         if 14 not in Devices:
+             Domoticz.Device(Name="L2 Reactive Power", Unit=14,TypeName="Custom",Used=0).Create()
+         Options = { "Custom" : "1;Var"} 
+         if 15 not in Devices:
+             Domoticz.Device(Name="L3 Reactive Power", Unit=15,TypeName="Custom",Used=0).Create()
+         Options = { "Custom" : "1;Var"}
+         if 16 not in Devices:
+             Domoticz.Device(Name="L1 Power Factor", Unit=16,TypeName="Custom",Used=0).Create()
+         Options = { "Custom" : "1;"} 
+         if 17 not in Devices:
+             Domoticz.Device(Name="L2 Power Factor", Unit=17,TypeName="Custom",Used=0).Create()
+         Options = { "Custom" : "1;"} 
+         if 18 not in Devices:
+             Domoticz.Device(Name="L3 Power Factor", Unit=18,TypeName="Custom",Used=0).Create()
+         Options = { "Custom" : "1;"}
+         if 19 not in Devices:
+             Domoticz.Device(Name="Average_line_to_neutral_volts", Unit=19,Type=0xF3,Subtype=0x8,Used=0).Create()
+         Options = { "Custom" : "1;V"} 
+         if 20 not in Devices:
+             Domoticz.Device(Name="Average_line_current", Unit=20,Type=0xF3,Subtype=0x17,Used=0).Create()
+         Options = { "Custom" : "1;A"} 
+         if 21 not in Devices:
+             Domoticz.Device(Name="Sum of line currents", Unit=21,Type=0xF3,Subtype=0x17,Used=0).Create()
+         Options = { "Custom" : "1;A"}
+         if 22 not in Devices:
+             Domoticz.Device(Name="Total System Power", Unit=22,TypeName="Usage",Used=1).Create()
+         Options = { "Custom" : "1;Wh"} 
+         if 23 not in Devices:
+             Domoticz.Device(Name="Total system volt amps", Unit=23,TypeName="Custom",Used=0).Create()
+         Options = { "Custom" : "1;VA"} 
+         if 24 not in Devices:
+             Domoticz.Device(Name="Total system VAr", Unit=24,TypeName="Custom",Used=0).Create()
+         Options = { "Custom" : "1;VAr"} 
+         if 25 not in Devices:
+             Domoticz.Device(Name="Total system power factor", Unit=25,TypeName="Custom",Used=0).Create()
+         Options = { "Custom" : "1;"} 
+         if 26 not in Devices:
+             Domoticz.Device(Name="Frequency", Unit=26,TypeName="Custom",Used=0).Create()
+         Options = { "Custom" : "1;Hz"} 
+         if 27 not in Devices:
+             Domoticz.Device(Name="Import Active Energy", Unit=27,Type=0x71,Subtype=0x0,Used=1).Create()
+         Options = { "Custom" : "1;kWh"}
+         if 28 not in Devices:
+             Domoticz.Device(Name="Export Active Energy", Unit=28,Type=0x71,Subtype=0x0,Used=1).Create()
+         Options = { "Custom" : "1;kWh"} 
+         if 29 not in Devices:
+             Domoticz.Device(Name="Line 1 to Line 2 volts", Unit=29,Type=0xF3,Subtype=0x8,Used=0).Create()
+         Options = { "Custom" : "1;V"} 
+         if 30 not in Devices:
+             Domoticz.Device(Name="Line 2 to Line 3 volts", Unit=30,Type=0xF3,Subtype=0x8,Used=0).Create()
+         Options = { "Custom" : "1;V"} 
+         if 31 not in Devices:
+             Domoticz.Device(Name="Line 3 to Line 1 volts", Unit=31,Type=0xF3,Subtype=0x8,Used=0).Create()
+         Options = { "Custom" : "1;V"} 
+         if 32 not in Devices:
+             Domoticz.Device(Name="Average line to line volts", Unit=32,Type=0xF3,Subtype=0x8,Used=0).Create()
+         Options = { "Custom" : "1;V"} 
+         if 33 not in Devices:
+             Domoticz.Device(Name="Neutral current", Unit=33,Type=0xF3,Subtype=0x17,Used=0).Create()
+         Options = { "Custom" : "1;A"}
+         if 34 not in Devices:
+             Domoticz.Device(Name="Total Active Energy", Unit=34,Type=0x71,Subtype=0x0,Used=1).Create()
+         Options = { "Custom" : "1;kWh"} 
+         if 35 not in Devices:
+             Domoticz.Device(Name="Total Reactive Energy", Unit=35,Type="Custom",Used=0).Create()
+         Options = { "Custom" : "1;kVArh"} 
+         if 36 not in Devices:
+             Domoticz.Device(Name="Resettable total kWh", Unit=36,Type=0x71,Subtype=0x0,Used=0).Create()
+         Options = { "Custom" : "1;kWh"}
+         if 37 not in Devices:
+             Domoticz.Device(Name="Resettable import kWh", Unit=37,Type=0x71,Subtype=0x0,Used=0).Create()
+         Options = { "Custom" : "1;kWh"}
+         if 38 not in Devices:
+             Domoticz.Device(Name="Resettable export kWh", Unit=38,Type=0x71,Subtype=0x0,Used=0).Create()
+         Options = { "Custom" : "1;kWh"}
+         if 39 not in Devices:
+             Domoticz.Device(Name="Net kWh(Import-Export)", Unit=39,Type=0x71,Subtype=0x0,Used=1).Create()
+         Options = { "Custom" : "1;kWh"} 
+         if 40 not in Devices:
+             Domoticz.Device(Name="Total Import Active Power", Unit=40,TypeName="Usage",Used=1).Create()
+         Options = { "Custom" : "1;W"} 
+         if 41 not in Devices:
+             Domoticz.Device(Name="Total Export Active Power", Unit=41,TypeName="Usage",Used=1).Create()
+         Options = { "Custom" : "1;W"} 
+              
+    def nStop(self):
         Domoticz.Log("Eastron SDM72D-M v2 Modbus plugin stop")
 
     def onHeartbeat(self):
