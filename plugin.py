@@ -66,12 +66,12 @@ class BasePlugin:
         if 5 not in Devices:
             Domoticz.Device(Name="L2 Current", Unit=5,Type=0xF3,Subtype=0x17,Used=0).Create()
         Options = { "Custom" : "1;A"} 
-        # if 6 not in Devices:
-        #     Domoticz.Device(Name="L3 Current", Unit=6,Type=0xF3,Subtype=0x17,Used=0).Create()
-        # Options = { "Custom" : "1;A"} 
-        # if 7 not in Devices:
-        #     Domoticz.Device(Name="L1 Active Power", Unit=7,TypeName="Usage",Used=1).Create()
-        # Options = { "Custom" : "1;W"} 
+        if 6 not in Devices:
+            Domoticz.Device(Name="L3 Current", Unit=6,Type=0xF3,Subtype=0x17,Used=0).Create()
+        Options = { "Custom" : "1;A"} 
+        if 7 not in Devices:
+            Domoticz.Device(Name="L1 Active Power", Unit=7,TypeName="Usage",Used=1).Create()
+        Options = { "Custom" : "1;W"} 
         # if 8 not in Devices:
         #     Domoticz.Device(Name="L2 Active Power", Unit=8,TypeName="Usage",Used=1).Create()
         # Options = { "Custom" : "1;W"} 
