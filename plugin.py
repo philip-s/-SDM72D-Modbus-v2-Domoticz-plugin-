@@ -69,15 +69,15 @@ class BasePlugin:
         # if 6 not in Devices:
         #     Domoticz.Device(Name="L3 Current", Unit=6,Type=0xF3,Subtype=0x17,Used=0).Create()
         # Options = { "Custom" : "1;A"} 
-         if 7 not in Devices:
-             Domoticz.Device(Name="L1 Active Power", Unit=7,TypeName="Usage",Used=1).Create()
-         Options = { "Custom" : "1;W"} 
-         if 8 not in Devices:
-             Domoticz.Device(Name="L2 Active Power", Unit=8,TypeName="Usage",Used=1).Create()
-         Options = { "Custom" : "1;W"} 
-         if 9 not in Devices:
-             Domoticz.Device(Name="L3 Active Power", Unit=9,TypeName="Usage",Used=1).Create()
-         Options = { "Custom" : "1;W"}
+        # if 7 not in Devices:
+        #     Domoticz.Device(Name="L1 Active Power", Unit=7,TypeName="Usage",Used=1).Create()
+        # Options = { "Custom" : "1;W"} 
+        # if 8 not in Devices:
+        #     Domoticz.Device(Name="L2 Active Power", Unit=8,TypeName="Usage",Used=1).Create()
+        # Options = { "Custom" : "1;W"} 
+        # if 9 not in Devices:
+        #     Domoticz.Device(Name="L3 Active Power", Unit=9,TypeName="Usage",Used=1).Create()
+        # Options = { "Custom" : "1;W"}
         # if 10 not in Devices:
         #     Domoticz.Device(Name="L1 Apparent Power", Unit=10,TypeName="Usage",Used=0).Create()
         # Options = { "Custom" : "1;W"} 
@@ -188,9 +188,9 @@ class BasePlugin:
             # L1_Current = self.rs485.read_float(6, functioncode=4, numberOfRegisters=2)
             # L2_Current = self.rs485.read_float(8, functioncode=4, numberOfRegisters=2)
             # L3_Current = self.rs485.read_float(10, functioncode=4, numberOfRegisters=2)
-            L1_Active_Power = self.rs485.read_float(12, functioncode=4, numberOfRegisters=2)
-            L2_Active_Power = self.rs485.read_float(14, functioncode=4, numberOfRegisters=2)
-            L3_Active_Power = self.rs485.read_float(16, functioncode=4, numberOfRegisters=2)
+            #L1_Active_Power = self.rs485.read_float(12, functioncode=4, numberOfRegisters=2)
+            #L2_Active_Power = self.rs485.read_float(14, functioncode=4, numberOfRegisters=2)
+            #L3_Active_Power = self.rs485.read_float(16, functioncode=4, numberOfRegisters=2)
             # L1_Apparent_Power = self.rs485.read_float(18, functioncode=4, numberOfRegisters=2)
             # L2_Apparent_Power = self.rs485.read_float(20, functioncode=4, numberOfRegisters=2)
             # L3_Apparent_Power = self.rs485.read_float(22, functioncode=4, numberOfRegisters=2)
@@ -231,9 +231,9 @@ class BasePlugin:
             # Devices[4].Update(0,str(L1_Current))
             # Devices[5].Update(0,str(L2_Current))
             # Devices[6].Update(0,str(L3_Current))
-            Devices[7].Update(0,str(L1_Active_Power))
-            Devices[8].Update(0,str(L2_Active_Power))
-            Devices[9].Update(0,str(L3_Active_Power))
+            #Devices[7].Update(0,str(L1_Active_Power))
+            #Devices[8].Update(0,str(L2_Active_Power))
+            #Devices[9].Update(0,str(L3_Active_Power))
             # Devices[10].Update(0,str(L1_Apparent_Power))
             # Devices[11].Update(0,str(L2_Apparent_Power))
             # Devices[12].Update(0,str(L3_Apparent_Power))
